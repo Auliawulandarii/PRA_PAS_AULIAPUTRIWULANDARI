@@ -9,24 +9,23 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
-        Schema::create('songs', function (Blueprint $table) {
+        Schema::create('album', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->integer('release_year');
-            $table->string('duration');
-            $table->string('genre');
-            $table->string('singer_name');
+            $table->date('release_year');
+            $table->string('singer');
+            $table->integer('all_song');
             $table->timestamps();
         });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down()
     {
-        Schema::dropIfExists('songs');
+        Schema::dropIfExists('album');
     }
 };
-
-
-

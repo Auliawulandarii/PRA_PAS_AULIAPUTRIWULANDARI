@@ -29,6 +29,9 @@
                 <li class="nav-item {{ Request::is('/singers/all') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url('/singers/all') }}">Singers</a>
                 </li>
+                <li class="nav-item {{ Request::is('/album/all') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url('/album/all') }}">Album</a>
+                </li>
             </ul>
         </div>
     </div>
