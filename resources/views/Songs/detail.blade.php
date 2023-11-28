@@ -20,10 +20,6 @@
     <h2>Detail Song</h2>
     <table class="table table-bordered">
         <tr>
-            <th>Id</th>
-            <td>{{ $songs->id }}</td>
-        </tr>
-        <tr>
             <th>Title</th>
             <td>{{ $songs->title }}</td>
         </tr>

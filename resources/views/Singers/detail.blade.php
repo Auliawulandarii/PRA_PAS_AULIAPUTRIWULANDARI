@@ -28,10 +28,6 @@
         <h2 class="mb-4">Detail Singers</h2>
         <table class="table table-bordered">
             <tr>
-                <th scope="col">Id</th>
-                <td>{{ $singer->id }}</td>
-            </tr>
-            <tr>
                 <th scope="col">Name</th>
                 <td>{{ $singer->name }}</td>
             </tr>
